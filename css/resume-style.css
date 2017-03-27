@@ -1,0 +1,48 @@
+/* Defining each section background and styles
+* --------------------------------------- */
+h1.white {
+  color: white;
+}
+
+h2.white {
+  color: white;
+}
+
+h2.blue {
+  color: #2C3E50;
+}
+
+h3.white {
+  color: white;
+}
+
+h4.white {
+  color: white;
+}
+
+h5.blue {
+  color: #2C3E50;
+}
+
+p.white {
+  color: white;
+}
+
+p.blue {
+  color: #2C3E50
+}
+
+#infoMenu li a {
+  color: #fff;
+}
+
+#fp-nav ul li a pan,
+.fp-slidesNav ul li a span {
+  color: white;
+}
+
+div img {
+max-width: 100%;
+height: auto;
+position: center center;
+}

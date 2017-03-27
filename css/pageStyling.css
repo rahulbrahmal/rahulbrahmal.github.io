@@ -1,0 +1,162 @@
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+  font-size: 5em;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin:0;
+  padding:0;
+}
+
+h2{
+  font-size: 3em;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin:0;
+  padding-top:2em;
+}
+
+h3{
+  font-size: 2.2em;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin:0;
+  padding:0;
+}
+
+h4 {
+  font-size: 2.2em;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin:0;
+  padding-top:2em;
+}
+
+h5 {
+  font-size: 2em;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  margin: 10px;
+  padding-top:0.5em;
+}
+
+p{
+  font-size: 1.5em;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 1.2em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+  text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section{
+  background-size: cover;
+}
+.slide{
+  background-size: cover;
+}
+
+/* Footer Sizing
+* --------------------------------------- */
+
+.container-footerOne {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container-footerTwo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footerPartOne {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+
+.footerPartTwo {
+    background-color: #303030;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+
+.fp-auto-height {
+    background-color: #2C3E50;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+/*Decorating Features*/
+
+hr.star-light,
+hr.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+hr.star-light:after,
+hr.star-primary:after {
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+hr.star-light {
+  border-color: white;
+}
+hr.star-light:after {
+  background-color: #DC9E73;
+  color: white;
+}
+
+hr.star-primary {
+  border-color: #2C3E50;
+}
+hr.star-primary:after {
+  background-color: white;
+  color: #2C3E50;
+}
+
+.btn-styling {
+  background:    #2c3e50;
+  border-radius: 999px;
+  color:         white;
+  display:       inline-block;
+  padding:       15px 27px;
+  font-family:   "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:   700;
+  font-size:     1.9em;
+  text-align:    center;
+  text-shadow:   1px 1px 0 #000;
+}
+
+.btn-styling :hover {
+    background: #DC9E73;
+}

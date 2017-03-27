@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta name="google-site-verification" content="8us4yO3BnMU15-
+  jU0RfBTXZaHfhI6UfRXHMb7F9ZKBs" />
+  <title> Rahul Brahmal's Resume Website </title>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <link href='css/resume-style.css' rel='stylesheet'>
+  <link href='css/formStyling.css' rel='stylesheet'>
+  <link href='css/navbarCustom.css' rel='stylesheet'>
+  <link href='css/pageStyling.css' rel='stylesheet'>
+  <link href='css/skchambers-home.css' rel='stylesheet'>
+
+  <link href='css/jquery.fullpage.css' rel='stylesheet'>
+
+  <!-- JavaScript Framework -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  <script type='text/javascript' src='js/jquery.fullpage.js'></script>
+  <script type='text/javascript' src="js/bootstrap.js"></script>
+
+  <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#DC9E73', '#FFFFFF', '#DC9E73', '#FFFFFF', '#DC9E73'],
+        anchors: ['homePage', 'aboutMe', 'resume', 'projects', 'contactMe'],
+        menu: '#menu',
+        scrollingSpeed: 1000
+			});
+		});
+	</script>
+
+  <!-- Fonts -->
+  <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-color">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navbar-brand-design" href="#homePage">Rahul Brahmal</a> <!-- Insert Logo Here -->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href='#aboutMe'>About Me</a></li>
+        <li><a href='#resume'>Resume</a></li>
+        <li><a href='#projects'>Projects</a></li>
+        <li><a href='#contactMe'>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Text  -->
+<div id='fullpage'>
+    <div class='section' id='section0'>
+      <!-- IMG to be added -->
+      <h1 class='white'> Rahul Brahmal </h1>
+      <hr class='star-light'>
+      <h3 class='white'> Georgia Institute of Technology - Computer Science Major </h3>
+    </div>
+
+    <div class='section' id='section1'>
+      <h2 class=-'blue'> About Me </h2>
+      <hr class='star-primary'>
+      <p class='blue'>
+         Hi! My name is Rahul Brahmal and I am a sophomore Computer Science
+         Major at Georgia Institute of Technology. I recently switched from
+         Mechanical Engineering to Computer Science.
+      </p>
+      <p class='blue'>
+        I am from Kuala Lumpur, Malaysia. However, growing up, I lived in Kuala
+        Lumpur, Malaysia, Singapore, Singapore, Palo Alto, California,
+        New Delhi, India and now, Atlanta, Georgia. I've had an exposure to the
+        world that a lot have not, and my experiences in these countless
+        countries has formed me into the person that I am today.
+      </p>
+    </div>
+
+    <div class='section' id='section2'>
+      <h2 class='white'> Resume </h2>
+      <hr class='star-light'>
+      <br>
+      <div class="form-group col-xs-12">
+        <a href='#'>
+          <button type="submit" class="btn btn-styling">Click Here for Resume</button>
+        </a>
+      </div>
+
+    </div>
+
+    <div class='section' id='section3'>
+      <h2 class='blue'> Projects </h2>
+      <hr class='star-primary'>
+      <br>
+      <div class='row'>
+        <div class='col-sm-4'>
+          <a href='#'>
+            <img src='img/phone.png' class='img-responsive' alt='Hack Marta'>
+            <h5 class='blue'>
+              A rewards system created, with the intent of increasing ridership
+              on Atlanta's public rail system, called the MARTA
+            </h5>
+          </a>
+        </div>
+        <div class='col-sm-4'>
+          <a href='#'>
+            <img src='img/computer.png' class='img-responsive' alt='HackGTeeny'>
+            <h5 class='blue'>
+              A web based application, which randomly searches for an item on
+              amazon, given certain pre-defined parameters outlined by you, and
+              places it in your cart, to be purchased
+            </h5>
+          </a>
+        </div>
+        <div class='col-sm-4'>
+          <a href='#'>
+            <img src='img/stocks.png' class='img-responsive' alt='Stock App'>
+            <h5 class='blue'>
+              An in-development application, which better allows investors to
+              receive information from their favorite analysts and news-outlets
+            </h5>
+          </a>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <div class='section' id='section4'>
+      <br> <br>
+      <h2 class='white'> Contact Me </h2>
+      <hr class='star-light'>
+
+      <form id='contact_form' action='mailto:rbrahmal3@gatech.edu?subject=Contact Information' method='post' enctype='text/plain'>
+        <div class='row'>
+          <br>
+          <input id='name' name='name' type='text' placeholder='Name'/>
+          <br/>
+        </div>
+        <br>
+        <div class='row'>
+          <br/>
+          <input id='ea' class='input' name='ea' type='text' placeholder='Email Address'/>
+          <br/>
+        </div>
+        <br>
+        <div class='row'>
+          <br/>
+          <input id='phone' class='input' name='phone' type='text' placeholder='Phone Number'/>
+          <br/>
+        </div>
+        <br>
+        <div class='row'>
+          <br/>
+          <input id='message' class='input' name='message' type='text' placeholder='Message'/>
+          <br/>
+        </div>
+        <br>
+        <input id='submit_button' type='submit' value='Submit' />
+        <br>
+        <br>
+      </form>
+    </div>
+
+     <div class="section fp-auto-height" id="section4">
+        <div class='row'>
+            <h4 class='white'> Links To Me </h3>
+        </div>
+        <div class='row'>
+          <ul class='list-inline'>
+            <li>
+              <a href='#'><i class='fa fa-fw fa-google-plus'></i></a>
+            </li>
+            <li>
+              <a href='#'><i class='fa fa-fw fa-linkedin'></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class='row'>
+          <h4 class='white'> Rahul Viraj Brahmal </h3>
+        </div>
+        <br>
+        <div class='row'>
+          <h3 class='white'> Thank you for visiting the site! </h3>
+        </div>
+        <br>
+      </div>
+  </div>
+
+</body>

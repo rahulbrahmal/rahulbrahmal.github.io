@@ -1,0 +1,59 @@
+/*Navbar Information*/
+.navbar {
+    height: 65px;
+    border: none;
+    margin: none;
+    opacity: 1.0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav ul {
+  margin:0;
+}
+
+.nav a {
+  font-size: 15px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+.navbar-default {
+  background-color: #2C3E50;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color: white;
+  word-spacing: 4px;
+  line-height: 28px;
+}
+
+.navbar-brand-design {
+  font-size: 25px;
+  color: white;
+  text-decoration-color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  line-height: 28px;
+}
+
+/*Hover Actions*/
+.navbar-default .navbar-nav > li > a:hover {
+    color: #f6bd29;
+}

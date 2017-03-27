@@ -1,0 +1,39 @@
+input, select {
+  background-color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: #2C3E50;
+  width: 80%;
+  height: 70px;
+  border: none;
+  text-indent: 15px;
+
+}
+
+input [type=text] {
+  width: 100%;
+  padding: 12px 0;
+  margin: 8px 0;
+  font-size: 50px;
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  text-decoration-color: white;
+  border-bottom: 10px white;
+
+}
+
+input[type=submit] {
+  width: 80%;
+  background-color: #2C3E50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #374e66;
+}
