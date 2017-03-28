@@ -55,5 +55,12 @@
 
 /*Hover Actions*/
 .navbar-default .navbar-nav > li > a:hover {
-    color: #f6bd29;
+  color: #DC9E73;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #DC9E73;
 }
