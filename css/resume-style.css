@@ -20,6 +20,11 @@ h4.white {
   color: white;
 }
 
+h4.white-padding {
+  color: white;
+  padding-top: 0em;
+}
+
 h5.blue {
   color: #2C3E50;
 }
