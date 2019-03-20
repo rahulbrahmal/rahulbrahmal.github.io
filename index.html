@@ -1,234 +1,656 @@
-<!DOCTYPE html>
-<html lang='en'>
-
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="google-site-verification" content="8us4yO3BnMU15-
-  jU0RfBTXZaHfhI6UfRXHMb7F9ZKBs" />
-  <title> Rahul Brahmal's Resume Website </title>
-  <link href='css/bootstrap.css' rel='stylesheet'>
-  <link href='css/resume-style.css' rel='stylesheet'>
-  <link href='css/formStyling.css' rel='stylesheet'>
-  <link href='css/navbarCustom.css' rel='stylesheet'>
-  <link href='css/pageStyling.css' rel='stylesheet'>
-
-  <link href='css/jquery.fullpage.css' rel='stylesheet'>
-
-  <!-- JavaScript Framework -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-  <script type='text/javascript' src='js/jquery.fullpage.js'></script>
-  <script type='text/javascript' src="js/bootstrap.js"></script>
-
-  <script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#DC9E73', '#FFFFFF', '#DC9E73', '#FFFFFF', '#DC9E73'],
-        anchors: ['homePage', 'aboutMe', 'resume', 'projects', 'contactMe'],
-        navigation: true,
-        menu: '#menu',
-        scrollingSpeed: 1000
-			});
-		});
-	</script>
-
-  <!-- Fonts -->
-  <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Brahmal</title>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- Navbar -->
-<nav class="navbar navbar-default navbar-fixed-top navbar-color">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand navbar-brand-design" href="#homePage">Rahul Brahmal</a> <!-- Insert Logo Here -->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-8 slideInLeft">
+                <div class="logo">
+                    <span class="point">Rahul</span>
+                </div>
+            </div>
+            <div class="col-md-9 hidden-sm hidden-xs slideInRight">
+                <div class="main-menu">
+                    <ul class="list-inline">
+                        <li><a href="#hello">Hello</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#leadership">Leadership</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact me</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-4 hidden-lg hidden-md slideInRight">
+                <div class="mobile-btn">
+                    <span><i class="mdi mdi-menu" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href='#aboutMe'>About Me</a></li>
-        <li><a href='#resume'>Resume</a></li>
-        <li><a href='#projects'>Projects</a></li>
-        <li><a href='#contactMe'>Contact</a></li>
-      </ul>
+</header>
+
+<!-- Mobile menu -->
+<div class="mob-menu-wrapper hidden-md hidden-lg">
+    <div class="close-mob-menu">
+        <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
     </div>
-  </div>
-</nav>
-
-  <!-- Text  -->
-<div id='fullpage'>
-    <div class='section' id='section0'>
-      <img class='img' src='img/profile.png' alt='Photo of Rahul Brahmal'>
-      <br>
-      <br>
-      <h1 class='white'> Rahul Brahmal </h1>
-      <hr class='star-light'>
-      <h3 class='white'> Georgia Institute of Technology - Computer Science Major </h3>
-      <br>
-      <br>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
     </div>
+</div>
 
-    <div class='section' id='section1'>
-      <h2 class=-'blue'> About Me </h2>
-      <hr class='star-primary'>
-      <p class='blue'>
-         Hi! My name is Rahul Brahmal and I am a senior Computer Science
-         Major at Georgia Institute of Technology, with a concentration in Information
-         Internetworks and Intelligence. During my freshmen year and
-         half of my sophomore year, I was a Mechanical Engineering Major.
-      </p>
-      <p class='blue'>
-        While I was born in Kuala Lumpur, Malaysia, I have had the opportunity
-        to live in various different cities during my formative education. These
-        cities include Kuala Lumpur, Malaysia, Singapore, Singapore, Palo Alto,
-        California, New Delhi, India and now, Atlanta, Georgia. The opportunity
-        to live all over the world, coupled with my experience in adapting
-        to very different environments gives me the perspective to understand
-        the varying needs of users in international markets.
-      </p>
-      <p class='blue'>
-        I also have a few hobbies, which include geeking out over new
-        technology, investing in stocks and FOREX markets, obsessing over
-        fitness and eating healthy, and keeping up to date on the latest
-        in politics.
-      </p>
-      <p class='blue'>
-        My objective is to obtain a full time software development position for the
-        January 2019.
-      </p>
-      <p class='blue'>
-        If you are interested in anything you may have read above or would
-        like to discuss something further, please feel free to contact me
-        below.
-      </p>
-
+<!-- Mobile menu -->
+<section id="hello" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 about-img-wrap">
+                <div class="about-img wow slideInRight">
+                    <img src="media/hello-section/profile.png" alt="" class="img-responsive">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-me wow slideInLeft">
+                    <div class="about-me-title">
+                        <h1><span class="point">I am Rahul Brahmal</span></h1>
+                    </div>
+                    <div class="about-me-text">
+                        <div class="opacity-box">
+                            <p>I am a senior Computer Science Major at the Georgia Institute of Technology,
+                                with a concentration in Information Internetworks and Intelligence. During
+                                my freshmen and half of my sophomore year, I was a Mechanical Engineering
+                                major.</p>
+                        </div>
+                    </div>
+                    <div class="about-me-info">
+                        <p>
+                            <span class="span-title">Email</span>
+                            <span>rahulvbrahmal@gmail.com</span>
+                        </p>
+                        <p>
+                            <span class="span-title">Address</span>
+                            <span>Georgia Institute of Technology, Atlanta, GA, USA</span>
+                        </p>
+                        <p>
+                            <span class="span-title">Degree</span>
+                            <span>Bachelors in Science in Computer Science</span>
+                        </p>
+                        <p>
+                            <span class="span-title">Focuses</span>
+                            <span>Artificial Intelligence, Machine Learning, Databases, Networking, Information Security</span>
+                        </p>
+                        <p>
+                            <span class="span-title">Social</span>
+                            <span class="span-icons">
+                                <a target="_blank" href="https://www.linkedin.com/in/rahul-viraj-brahmal-41311073" class="mdi fonts-icons mdi-linkedin"></a>
+                                <a target="_blank" href="https://github.com/rahulbrahmal" class="mdi fonts-icons mdi-github-circle"></a>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="about-btns">
+                        <a data-toggle="modal" data-target="#contact-modal" href="#" class="site-btn">Contact me</a>
+                        <a href="./download/Rahul_Brahmal_Resume.pdf" class="site-btn gray-btn">Download cv</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <div class='section' id='section2'>
-      <h2 class='white'> Resume </h2>
-      <hr class='star-light'>
-      <br>
-      <div class="form-group col-xs-12">
-        <a href='./files/Rahul_Brahmal_Resume.pdf' target='_blank'>
-          <button type="submit" class="btn btn-styling">Click Here for Resume</button>
-        </a>
-      </div>
+<section id="skills" class="section">
+    <div class="container">
+        <div class="row wave-bg">
+            <div class="zigzag wow slideInLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
 
+            <div class="col-md-4 wow slideInLeft">
+                <div class="section-sidebar">
+                    <h2><span class="point">Skills</span></h2>
+                    <div class="opacity-box">
+                        <!-- <p> </p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                    <div class="col-md-6 wow zoomIn">
+                        <div class="advantages-box">
+                            <h4>Software Development</h4>
+                            <div class="opacity-box">
+                                <p>Python, Javascript, JAVA, Node.js, C, Ruby. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow zoomIn">
+                        <hr class="mobile-hr">
+                        <div class="advantages-box">
+                            <h4>Frontent Development</h4>
+                            <div class="opacity-box">
+                                <p>React.js, Bootstrap, HTML, CSS, Sketch.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 wow zoomIn">
+                        <hr>
+                        <div class="advantages-box">
+                            <h4>Platforms</h4>
+                            <div class="opacity-box">
+                                <p>Flask, Rails.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow zoomIn">
+                        <hr>
+                        <div class="advantages-box">
+                            <h4>Tools/Frameworks</h4>
+                            <div class="opacity-box">
+                                <p>Bootstrap, Git, MongoDB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 wow zoomIn">
+                        <hr>
+                        <div class="advantages-box">
+                            <h4>Programs</h4>
+                            <div class="opacity-box">
+                                <p>Solidworks, Creo, Matlab.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow zoomIn">
+                        <hr>
+                        <div class="advantages-box">
+                            <h4>Foreign Languages</h4>
+                            <div class="opacity-box">
+                                <p>English, Spanish, Malay.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
+</section>
 
-    <div class='section' id='section3'>
-      <h2 class='blue'> Projects </h2>
-      <hr class='star-primary'>
-      <br>
-      <div class='row'>
-        <div class='col-sm-6'>
-          <a href='https://github.com/rahulbrahmal/Ryder_App.git' target='_blank'>
-            <img src='img/phone.png' class='img-responsive' alt='Hack Marta'>
-            <h5 class='blue'>
-              A rewards system created, with the intent of increasing ridership
-              on Atlanta's public rail system, called the MARTA
-            </h5>
-          </a>
+<section id="experience" class="section">
+    <div class="container">
+        <div class="row wave-bg">
+            <div class="zigzag wow slideInLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                       <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-md-4 wow slideInLeft">
+                <div class="section-sidebar">
+                    <h2><span class="point">Experience</span></h2>
+                    <div class="opacity-box">
+                        <!-- <p> </p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 right-box">
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">Intern Software Engineer on Services and Tools Team</h4>
+                            <p class="about-info">Grab</p>
+                            <p>June, 2018 — August, 2018</p>
+                            <div class="opacity-box">
+                                <ul>
+                                    <li>
+                                        Implemented front-end chatbot features using HTML and JavaScript
+                                        <ul>
+                                            <li>
+                                                Interacted with UI and Customer Service teams to prioritize feature development
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Implemented backup agent feature for NLP Chatbot, using Dialogflow APIs
+                                    </li>
+                                    <li>
+                                        Participated in ideation of future products and features within the Services and Tools team
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">Intern Product Manager at Mr. DIY Ecommerce Team</h4>
+                            <p class="about-info">PE Firm Creador</p>
+                            <p>May, 2018 — June, 2018</p>
+                            <div class="opacity-box">
+                                <ul>
+                                    <li>
+                                        Worked with software development, warehousing, logistics, marketing and corporate teams to outline launch expectations
+                                    </li>
+                                    <li>
+                                        Created a unique order management ecosystem that had yet to be implemented anywhere in Malaysia
+                                    </li>
+                                    <li>
+                                        Helped successfully launched ecommerce site on schedule
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">Intern Engineer on AQUA MAV Project</h4>
+                            <p class="about-info">ARL, Imperial College London</p>
+                            <p>June, 2016 — August, 2016</p>
+                            <div class="opacity-box">
+                                <ul>
+                                    <li>
+                                        Designed the exterior hull of the MAV using Solidworks and Creo
+                                    </li>
+                                    <li>
+                                        Prototyped designs with an industrial 3D-Printer
+                                    </li>
+                                    <li>
+                                        Tested and chose base material for MAV prototype
+                                        <ul>
+                                            <li>
+                                                Used as basis for first integration test
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">Intern Engineer on Water Lilly Project</h4>
+                            <p class="about-info">Saora Industries</p>
+                            <p>May, 2014 — May, 2015</p>
+                            <div class="opacity-box">
+                                <ul>
+                                    <li>
+                                        Assisted in developing an affordable solar-powered water filter that provides clean drinking water to rural Malaysian villages
+                                    </li>
+                                    <li>
+                                        Refined the water filtration process, such that electrical power is not required
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class='col-sm-6'>
-          <a href='https://github.com/rahulbrahmal/Amazon_Roulette.git' target='_blank'>
-            <img src='img/computer.png' class='img-responsive' alt='HackGTeeny'>
-            <h5 class='blue'>
-              A web based application, which randomly searches for an item on
-              Amazon and places it in the user's cart
-            </h5>
-          </a>
-        </div>
-        <!-- <div class='col-sm-4'> -->
-          <!-- Link to be added -->
-            <!-- <img src='img/stocks.png' class='img-responsive' alt='Stock App'>
-            <h5 class='blue'>
-              An in-development application, which better allows investors to
-              receive information from their favorite analysts and news-outlets
-            </h5>
-
-        </div> -->
-      </div>
-      <br>
     </div>
+</section>
 
-    <div class='section' id='section4'>
-      <br> <br>
-      <h2 class='white'> Contact Me </h2>
-      <hr class='star-light'>
-
-      <form id='contact_form' action='MAILTO:rbrahmal3@gatech.edu?subject=Contact Information' method='post' enctype='text/plain'>
-        <div class='row'>
-          <br>
-          <input id='name' name='Name' type='text' placeholder='Name'/>
-          <br/>
+<section id="leadership" class="section">
+    <div class="container">
+        <div class="row wave-bg">
+            <div class="zigzag wow slideInLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-md-4 wow slideInLeft">
+                <div class="section-sidebar">
+                    <h2><span class="point">Leadership</span></h2>
+                    <div class="opacity-box">
+                        <!-- <p> </p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 right-box">
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">Co-Lead of Composites Team</h4>
+                            <p class="about-info">HyTech Racing</p>
+                            <p>Dec, 2015 — May, 2016</p>
+                            <div class="opacity-box">
+                                <ul>
+                                    <li>
+                                        Oversaw the design and manufacturing of the Nose Cone, Seat and Side-Pods
+                                    </li>
+                                    <li>
+                                        Completed a build cycle reserved for 1 year within 6-months
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br>
-        <div class='row'>
-          <br/>
-          <input id='email' class='input' name='Email Address' type='text' placeholder='Email Address'/>
-          <br/>
-        </div>
-        <br>
-        <div class='row'>
-          <br/>
-          <input id='phone_number' class='input' name='Phone Number' type='text' placeholder='Phone Number'/>
-          <br/>
-        </div>
-        <br>
-        <div class='row'>
-          <br/>
-          <input id='message' class='input' name='Personal Message' type='text' placeholder='Message'/>
-          <br/>
-        </div>
-        <br>
-        <input id='submit_button' type='submit' value='Submit' />
-        <br>
-        <br>
-      </form>
     </div>
+</section>
 
-     <div class="section fp-auto-height" id="section4">
-        <div class='row'>
-            <h4 class='white'> Links To Me </h4>
+<section id="portfolio" class="section">
+    <div class="container">
+        <div class="row wave-bg">
+            <div class="zigzag wow slideInLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-md-4 wow slideInLeft">
+                <div class="section-sidebar">
+                    <h2><span class="point">Portfolio</span></h2>
+                    <div class="opacity-box">
+                        <!-- <p> </p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 right-box">
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">
+                                Automated Online Scraping and Purchasing Bot
+                            </h4>
+                            <p class="about-info"> &nbsp; </p>
+                            <p>May, 2017 — Present</p>
+                            <div class="opacity-box">
+                                <ul>
+                                    <li>
+                                        Developed a bot using Selenium and Chrome Driver that instantly purchases items from online web-stores
+                                    </li>
+                                    <li>
+                                        Familiarized myself with the AWS Ecosystem and selected locations closest to the host websites servers
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">MARTA Ryder App</h4>
+                            <p class="about-info"> &nbsp; </p>
+                            <p>February 2017</p>
+                            <div class="opacity-box">
+                                <ul>
+                                    <li>
+                                        Developed rewards system for MARTA rail system, with the intent of increasing ridership
+                                    </li>
+                                    <li>
+                                        App provided points if users completed certain actions, which could be redeemed for credit on MARTA
+                                    </li>
+                                    <li>
+                                        Familiarized myself with Android app development
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">Amazon Roulette</h4>
+                            <p class="about-info"> &nbsp; </p>
+                            <p>January 2017</p>
+                            <div class="opacity-box">
+                                <ul>
+                                    <li>
+                                        Developed a web-based application that randomly searches for item’s on Amazon and places it in the user’s cart
+                                    </li>
+                                    <li>
+                                        Familiarized myself with scripting and Amazon’s API
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br>
-        <div class='row'>
-          <ul class='list-inline'>
-            <li>
-              <a href='https://github.com/rahulbrahmal' class='btn-social btn-outline'><span class='sr-only'>Github</span><i class='fa fa-fw fa-github'></i></a>
-            </li>
-            <!-- <li>
-              <a href='https://plus.google.com' class='btn-social btn-outline'><span class='sr-only'>Google Plus</span><i class='fa fa-fw fa-google-plus'></i></a>
-            </li> -->
-            <li>
-              <a href='https://www.linkedin.com/in/rahul-brahmal-12275713a/' class='btn-social btn-outline'><span class='sr-only'>LinkedIn</span><i class='fa fa-fw fa-linkedin'></i></a>
-            </li>
-            <li>
-              <a href='mailto:rbrahmal3@gatech.edu' class='btn-social btn-outline'><span class='sr-only'>Email</span><i class='fa fa-fw fa-envelope'></i></a>
-            </li>
-          </ul>
-        </div>
-        <br>
-        <div class='row'>
-          <h4 class='white-padding'> Rahul Viraj Brahmal </h4>
-        </div>
-        <br>
-        <div class='row'>
-          <h3 class='white'> Thank you for visiting the site! </h3>
-        </div>
-        <br>
-        <br>
-      </div>
-  </div>
+    </div>
+</section>
 
+<section id="contact" class="section">
+    <div class="container">
+        <div class="row wave-bg">
+            <div class="zigzag wow slideInLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-md-4 wow slideInLeft">
+                <div class="section-sidebar">
+                    <h2><span class="point">Contact</span></h2>
+                    <div class="opacity-box">
+                        <p>If you are interested in anything you may have read
+                           above or would like to discuss something further,
+                           please feel free to contact me below.</p>
+                    </div>
+                </div>
+            </div>
+            <form action="mail.php" class="wow slideInRight js-footer-form">
+                <div class="form-wrapper">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input class="form-field js-field-name" type="text" placeholder="Name" required>
+                            <span class="form-validation"></span>
+                            <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-field js-field-email" type="email" placeholder="E-mail" required>
+                            <span class="form-validation"></span>
+                            <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <textarea class="form-field js-field-message" placeholder="Message" required></textarea>
+                            <span class="form-validation"></span>
+                        </div>
+                        <div class="submit-holder">
+                            <input class="site-btn" type="submit" value="Send message">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Contact me modal -->
+<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="portfolio-modal">
+    <div class="modal-dialog modal-center" role="document">
+        <div class="modal-content" >
+            <div class="modal-body">
+                <div class="modal-title">
+                    <h1><span class="point">Let’s work together</span></h1>
+                </div>
+                <div class="modal-description">
+                    <p> If you are interested in anything you may have read
+                        above or would like to discuss something further,
+                        please feel free to contact me below.</p>
+                </div>
+                <div class="modal-form">
+                    <form action="mail.php" class="js-modal-form">
+                        <div class="row form-wrapper">
+                            <div class="col-lg-5 col-md-5">
+                                <div class="form-group">
+                                    <input class="form-field js-field-name" type="text" placeholder="Name" required>
+                                    <span class="form-validation"></span>
+                                    <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-field js-field-email" type="email" placeholder="E-mail" required>
+                                    <span class="form-validation"></span>
+                                    <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-7">
+                                <div class="form-group">
+                                    <textarea class="form-field js-field-message" placeholder="Message" required></textarea>
+                                    <span class="form-validation"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="submit-holder">
+                                    <input class="site-btn js-submit-contact" type="submit" value="Send message">
+                                    <a href="#" class="site-btn gray-btn" data-dismiss="modal">Back to cv</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact me modal -->
+
+<!-- Thank you modal -->
+<div class="modal fade" id="thanks-modal" tabindex="-1" role="dialog" aria-labelledby="thanks-modal">
+    <div class="modal-dialog modal-center" role="document">
+        <div class="modal-content" >
+            <div class="modal-body">
+                <div class="modal-title">
+                    <h1><span class="point">Your message has been sent</span></h1>
+                </div>
+                <div class="modal-description">
+                    <p>Thank you for your interest in my work. I’ll contact you just in a few
+                        days. Stay tuned and see you soon!</p>
+                </div>
+                <a href="#" class="site-btn" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Thank you modal -->
+
+<!-- Error message modal -->
+<div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="error-modal">
+    <div class="modal-dialog modal-center" role="document">
+        <div class="modal-content" >
+            <div class="modal-body">
+                <div class="modal-title">
+                    <h1><span class="point">Ooops!</span></h1>
+                </div>
+                <div class="modal-description">
+                    <p>Something went wrong!</p>
+                </div>
+                <a href="#" class="site-btn" data-dismiss="modal">Please try again</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Error message modal -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.placeholder.min.js"></script>
+
+<!--Mix It Up-->
+<script src="assets/mixitup-v3/dist/mixitup.min.js"></script>
+
+<!--THEME-->
+<script src="js/wow.min.js"></script>
+
+<script src="js/theme.js"></script>
 </body>
+</html>
