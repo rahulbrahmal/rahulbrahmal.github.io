@@ -123,29 +123,37 @@ $(document).ready(function () {
     var name = $(formName + ' .js-field-name').val();
     var email = $(formName + ' .js-field-email').val();
     var message = $(formName + ' .js-field-message').val();
+    // $.ajax({
+    //   url: "https://formspree.io/rahulvbrahmal@gmail.com",
+    //   method: "POST",
+    //   data: {
+    //       name: name,
+    //       _replyto: email,
+    //       email: email,
+    //       message: message,
+    //       _subject: 'Rahul Website Contact Me',
+    //   },
+    //   dateType: 'json',
+    //   success: function() {
+    //     console.log("success")
+    //     $('#contact-modal').modal('hide');
+    //     $('#thanks-modal').modal('show');
+    //   },
+    //   error: function() {
+    //     console.log('error');
+    //     $('#contact-modal').modal('hide');
+    //     // $('#error-modal').modal('show');
+    //     $('#thanks-modal').modal('show');
+    //   }
+    // });
+    var form = document.querySelector('form')
+    var data = new FormData(form)
+    var req = new XMLHttpRequest()
+    req.open(form.method, form.action)
+    req.send(data)
 
-    var formData = {
-        name: name,
-        email: email,
-        message: message
-    };
-
-    $.ajax({
-      type: "POST",
-      url: '/mail.php',
-      data: formData,
-      success: function() {
-        $('#contact-modal').modal('hide');
-        $('#thanks-modal').modal('show');
-      },
-      error: function() {
-        console.log('error');
-        $('#contact-modal').modal('hide');
-        // $('#error-modal').modal('show');
-        $('#thanks-modal').modal('show');
-
-      }
-    });
+    $('#contact-modal').modal('hide');
+    $('#thanks-modal').modal('show');
   }
 
 });
